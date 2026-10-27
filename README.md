@@ -2,8 +2,8 @@
 
 ## Tải bản mới nhất
 
-- [RobloxMulti portable v28.0.0](https://github.com/Stealder/rj/releases/download/v28.0.0/RobloxMulti-portable-v28.0.0.zip)
-- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v28.0.0/auto_update.exe)
+- [RobloxMulti portable v30.0.0](https://github.com/Stealder/rj/releases/download/v30.0.0/RobloxMulti-portable-v30.0.0.zip)
+- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v30.0.0/auto_update.exe)
 - [Danh sách bản phát hành](https://github.com/Stealder/rj/releases)
 
 Giải nén toàn bộ ZIP và chạy `tool.exe`. Giữ thư mục `_internal` cạnh EXE.
@@ -18,3 +18,5 @@ Các file tài khoản, API key, proxy, cookie và log cá nhân không đi kèm
 Auto Change: `mode: "time"` checks conditions alongside the timer. `interval_minutes: 0` disables the timer only. Qualified accounts are saved to output before their input lines are removed.
 
 V28: only accounts selected for an active slot authenticate. Confirmed unauthorized cookies are archived to output/deadck.txt before removing their exact input line; network/proxy errors are retried.
+
+V30: prevent console QuickEdit pauses, check every account timer before launches, and share launch attempts fairly within each proxy. After timed IP changes, wait 60 seconds then require HTTPS and UDP probes before account login; failed probes retry without another IP rotation.
