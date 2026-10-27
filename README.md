@@ -2,8 +2,8 @@
 
 ## Tải bản mới nhất
 
-- [RobloxMulti portable v33.0.0](https://github.com/Stealder/rj/releases/download/v33.0.0/RobloxMulti-portable-v33.0.0.zip)
-- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v33.0.0/auto_update.exe)
+- [RobloxMulti portable v34.0.0](https://github.com/Stealder/rj/releases/download/v34.0.0/RobloxMulti-portable-v34.0.0.zip)
+- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v34.0.0/auto_update.exe)
 - [Danh sách bản phát hành](https://github.com/Stealder/rj/releases)
 
 Giải nén toàn bộ ZIP và chạy `tool.exe`. Giữ thư mục `_internal` cạnh EXE.
@@ -26,3 +26,5 @@ V31: log stable process exit codes and other Roblox PIDs when a client disappear
 V32: verify copied client files against the installed Roblox version and restore missing or changed files. Use tool.exe --crash-report or menu [6] for Windows crash-module metadata. Does not claim to fix every cause of native access violations.
 
 V33: pause new client launches when RobloxPlayerInstaller is running; do not multiply overlapping installers. Finish one official Roblox update with the tool closed before restarting multi-client mode. Debug reports now collect Installer/Bootstrapper logs as well as Windows crash metadata.
+
+V34: honor an existing explicit Roblox EXE/version directory in roblox_exe. A sibling timestamp no longer overrides that selected path. Fallback discovery only applies when the selected player is missing; debug logs record the selected source EXE.
