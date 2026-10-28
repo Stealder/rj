@@ -2,8 +2,8 @@
 
 ## Tải bản mới nhất
 
-- [RobloxMulti portable v36.0.0](https://github.com/Stealder/rj/releases/download/v36.0.0/RobloxMulti-portable-v36.0.0.zip)
-- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v36.0.0/auto_update.exe)
+- [RobloxMulti portable v37.0.0](https://github.com/Stealder/rj/releases/download/v37.0.0/RobloxMulti-portable-v37.0.0.zip)
+- [auto_update.exe](https://github.com/Stealder/rj/releases/download/v37.0.0/auto_update.exe)
 - [Danh sách bản phát hành](https://github.com/Stealder/rj/releases)
 
 Giải nén toàn bộ ZIP và chạy `tool.exe`. Giữ thư mục `_internal` cạnh EXE.
@@ -32,3 +32,5 @@ V34: honor an existing explicit Roblox EXE/version directory in roblox_exe. A si
 V35: optional roblox_version_lock requires a specific existing player and refuses version fallback. Locked rejoin uses private copies without RobloxPlayerInstaller.exe; the installed original is preserved. Default false; set true with your exact roblox_exe path. This does not override Roblox server version requirements.
 
 V36: verify the selected build native files against its official installation manifest. Recover mismatched files into tool-owned runtime copies without altering the installed source. Check native bytes before every launch/rejoin; recover idle runtimes or select a new clean generation while live clients continue. Native recovery does not promise to fix unrelated access violations.
+
+V37: default native_file_policy=installed copies current native files from the selected version folder, without official DLL rollback or v36 cache reuse. Preserve runtime DLL changes when source is unchanged; recreate deleted runtimes from the current selected source. Optional official mode retains v36 recovery. Executor compatibility is not guaranteed.
